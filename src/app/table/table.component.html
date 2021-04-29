@@ -1,0 +1,16 @@
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Hex</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of table">
+        <td>{{i.color}}</td>
+        <td>{{i.value}}</td>
+        <td style="background: {{i.value}}"></td>
+      </tr>
+    </tbody>
+  </table>
